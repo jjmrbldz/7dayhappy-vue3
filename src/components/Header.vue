@@ -18,11 +18,11 @@
             </div>
             <div class="container">
                 <div class="nav left">
-                    <a href="javascript:void(0)" @click="scrollToSection">
+                    <a href="#games-section">
                         <span>라이브카지노</span>
                         <span>live casino</span>
                     </a>
-                    <a href="javascript:void(0)" @click="scrollToSection">
+                    <a href="#games-section">
                         <span>슬롯게임</span>
                         <span>slot games</span>
                     </a>
@@ -57,17 +57,6 @@
 <script>
 export default {
   methods: {
-    scrollToSection() {
-      const windowHeight = window.innerHeight;
-      const scrollPercentage = 0.55;
-
-      const targetScrollPosition = windowHeight * scrollPercentage;
-
-      window.scrollTo({
-        top: targetScrollPosition,
-        behavior: 'smooth', 
-      });
-    },
   },
 };
 </script>

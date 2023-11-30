@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" id="games-section">
         <div class="main-tab">
             <a href="javascript:void(0)" @click="isCasinoActive = true, isSlotActive = false">
                 <img src="src/assets/img/elements/casino-img.png" alt="">

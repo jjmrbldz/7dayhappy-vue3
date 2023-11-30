@@ -1,5 +1,6 @@
-import './assets/css/all.min.css'
 import './assets/css/bootstrap.min.css'
+import '../node_modules/nprogress/nprogress.css' 
+import './assets/css/all.min.css'
 import './assets/main.css'
 import './assets/css/style.css'
 
