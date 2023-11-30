@@ -81,12 +81,40 @@
             }
         }
     }
+    .game-card-parent{
+        &.casino{
+            .game-card{
+                width: calc(100% / 4 - 13px);
+                height: 300px;
+            }
+        }
+        &.slot{
+            .game-card{
+                width: calc(100% / 6 - 13px);
+                height: 200px;
+            }
+        }
+    }
 }
 
 @media (max-width:1000px){
     .container {
         max-width: calc(100% - 10px) !important;
         padding: 0 !important;
+    }
+    .game-card-parent{
+        &.casino{
+            .game-card{
+                width: calc(100% / 3 - 13px);
+                height: 300px;
+            }
+        }
+        &.slot{
+            .game-card{
+                width: calc(100% / 5 - 13px);
+                height: 200px;
+            }
+        }
     }
     .subpage-wrapper{
         .subpage-container{
@@ -220,8 +248,37 @@
         }
     }
 }
-
+@media (max-width:800px){
+    .game-card-parent{
+        &.casino{
+            .game-card{
+                width: calc(100% / 2 - 13px);
+                height: 300px;
+            }
+        }
+        &.slot{
+            .game-card{
+                width: calc(100% / 3 - 13px);
+                height: 200px;
+            }
+        }
+    }
+}
 @media (max-width:500px){
+    .game-card-parent{
+        &.casino{
+            .game-card{
+                width: calc(100% / 2 - 13px);
+                height: 249px;
+            }
+        }
+        &.slot{
+            .game-card{
+                width: calc(100% / 2 - 13px);
+                height: 200px;
+            }
+        }
+    }
     main{
         section{
             &.mid-sec{
@@ -259,6 +316,19 @@
 }
 
 @media (max-width:400px){
+    .game-card-parent{
+        &.casino{
+            .game-card{
+                height: 177px;
+            }
+        }
+        &.slot{
+            .game-card{
+                width: calc(100% / 2 - 13px);
+                height: 138px;
+            }
+        }
+    }
     footer{
         .container{
             .partners{
