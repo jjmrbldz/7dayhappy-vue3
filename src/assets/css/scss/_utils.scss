@@ -1,0 +1,63 @@
+.container {
+    max-width: calc(100% - 300px) !important;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+
+.modal-content {
+    &.providers-modal {
+        min-height: 500px;
+        background: linear-gradient(
+            1deg,
+            rgb(130, 89, 6) 0%,
+            rgb(254, 205, 115) 48%,
+            rgb(125, 84, 2) 100%
+        );
+        position: relative;
+        padding: 29px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            background: radial-gradient(
+                circle,
+                rgb(57, 38, 0) 0%,
+                rgb(0, 0, 0) 100%
+            );
+            border-radius: 5px;
+        }
+        .games-modal-header {
+            position: relative;
+            left: 50%;
+            top: 22px;
+            transform: translateX(-50%);
+            // background:linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(69 52 19) 51%, rgba(0, 0, 0, 0) 100%);
+            padding: 10px;
+            width: calc(100% - 348px);
+            text-align: center;
+            box-shadow: 0 0 10px #000000d5;
+            margin-bottom: 40px;
+            .title {
+                background: -webkit-linear-gradient(#ffe0a8, #684b17);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 3em;
+                font-weight: 900;
+                line-height: 1;
+            }
+        }
+        .modal-body {
+            background: url(../img/bgs/modal-bg.jpg);
+            background-size: cover;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 1px solid #251c0b;
+            box-shadow: inset 0 0 270px #000;
+        }
+    }
+}
