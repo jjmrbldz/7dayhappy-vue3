@@ -21,11 +21,11 @@ import { RouterLink, RouterView } from "vue-router";
             </div>
             <div class="container">
                 <div class="nav left">
-                    <a href="#">
+                    <a href="#games-section">
                         <span>라이브카지노</span>
                         <span>live casino</span>
                     </a>
-                    <a href="#">
+                    <a href="#games-section">
                         <span>슬롯게임</span>
                         <span>slot games</span>
                     </a>
