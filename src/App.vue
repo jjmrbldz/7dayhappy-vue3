@@ -10,8 +10,10 @@ import Footer from "./components/Footer.vue";
     <main>
         <Header />
         <Banner />
-        <RouterView />
-        <Footer />
+        <section class="mid-sec">
+            <RouterView />
+            <Footer />
+        </section>
     </main>
 </template>
 

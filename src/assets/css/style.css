@@ -551,7 +551,7 @@ img {
   justify-content: center;
   opacity: 0;
 }
-.game-card .game-card-overlay button i {
+.game-card .game-card-overlay button i, .game-card .game-card-overlay button svg {
   font-size: 2.3em;
   background: -webkit-linear-gradient(#edc36b, #cf8d09);
   -webkit-background-clip: text;
@@ -736,7 +736,7 @@ main section.mid-sec .main-tab a {
   display: block;
   width: calc(50% - 70px);
 }
-main section.mid-sec .main-tab a:hover .box-bg .box-text i {
+main section.mid-sec .main-tab a:hover .box-bg .box-text i, main section.mid-sec .main-tab a:hover .box-bg .box-text svg {
   position: relative;
   animation: arrow 0.7s ease-in infinite;
 }
@@ -886,6 +886,7 @@ main section.mid-sec .main-tab a .box-bg .box-text span {
   border-radius: 5px;
   padding: 10px;
   display: none;
+  overflow: hidden;
 }
 .board-wrapper .mid-board .body.active {
   display: block;
@@ -1004,6 +1005,10 @@ footer .container .logo-section span {
   font-size: 0.8em;
   color: #9e8964;
   font-weight: 500;
+}
+
+.vue3-marquee.vertical {
+  width: 100% !important;
 }
 
 @media (max-width: 1625px) {

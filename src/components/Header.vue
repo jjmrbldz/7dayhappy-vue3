@@ -1,6 +1,3 @@
-<script>
-import { RouterLink, RouterView } from "vue-router";
-</script>
 <template lang="">
     <header>
         <div class="top">
@@ -21,11 +18,11 @@ import { RouterLink, RouterView } from "vue-router";
             </div>
             <div class="container">
                 <div class="nav left">
-                    <a href="#">
+                    <a href="javascript:void(0)" @click="scrollToSection">
                         <span>라이브카지노</span>
                         <span>live casino</span>
                     </a>
-                    <a href="#">
+                    <a href="javascript:void(0)" @click="scrollToSection">
                         <span>슬롯게임</span>
                         <span>slot games</span>
                     </a>
@@ -56,3 +53,21 @@ import { RouterLink, RouterView } from "vue-router";
         </div>
     </header>
 </template>
+
+<script>
+export default {
+  methods: {
+    scrollToSection() {
+      const windowHeight = window.innerHeight;
+      const scrollPercentage = 0.55;
+
+      const targetScrollPosition = windowHeight * scrollPercentage;
+
+      window.scrollTo({
+        top: targetScrollPosition,
+        behavior: 'smooth', 
+      });
+    },
+  },
+};
+</script>
