@@ -1,29 +1,25 @@
-.btn {
+.btn{
     white-space: nowrap;
-    &.btn-sm2 {
+    &.btn-sm2{
+
     }
-    &.btn-gold {
-        background: linear-gradient(
-            1deg,
-            rgb(130, 89, 6) 0%,
-            rgb(254, 205, 115) 48%,
-            rgb(125, 84, 2) 100%
-        );
-        border-radius: 4px !important;
+    &.btn-gold{
+        background: linear-gradient(1deg, rgb(130 89 6) 0%, rgb(254 205 115) 48%, rgb(125 84 2) 100%);
+        border-radius: 4px !important;    
     }
 }
 
-.carousel-control-next,
-.carousel-control-prev {
+.carousel-control-next, 
+.carousel-control-prev{
     top: 50%;
     transform: translateY(-50%);
 }
 
-.menu-toggle {
+.menu-toggle{
     display: none;
 }
 
-.subpage-wrapper {
+.subpage-wrapper{
     position: fixed;
     top: 0;
     left: 0;
@@ -32,38 +28,28 @@
     background-color: #000000c7;
     z-index: 100;
     display: none;
-    .form-control {
+    .form-control{
         background-color: #2f1846;
         color: #fff;
     }
-    &.show {
+    &.show{
         display: block;
     }
-    .subpage-container {
-        background: linear-gradient(
-            1deg,
-            rgb(130, 89, 6) 0%,
-            rgb(254, 205, 115) 48%,
-            rgb(125, 84, 2) 100%
-        );
+    .subpage-container{
+        background:linear-gradient(1deg, rgb(130, 89, 6) 0%, rgb(254, 205, 115) 48%, rgb(125, 84, 2) 100%);
         width: calc(100% / 1.5);
-        height: calc(100% - 50px);
+        height:calc(100% - 50px);
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%,-50%);
         border-radius: 10px;
-        .close-subpage {
+        .close-subpage{
             position: absolute;
             z-index: 30;
             right: -13px;
             top: -13px;
-            background: linear-gradient(
-                180deg,
-                rgb(130, 4, 28) 0%,
-                rgb(145, 34, 34) 48%,
-                rgb(255, 76, 76) 100%
-            );
+            background: linear-gradient(180deg, rgb(130 4 28) 0%, rgb(145 34 34) 48%, rgb(255 76 76) 100%);
             width: 34px;
             height: 34px;
             border-radius: 5px;
@@ -74,28 +60,24 @@
             font-size: 20px;
             box-shadow: 0 0 5px #000;
         }
-        .subpage-inner {
-            background: radial-gradient(
-                circle,
-                rgb(57, 38, 0) 0%,
-                rgb(0, 0, 0) 100%
-            );
+        .subpage-inner{
+            background:radial-gradient(circle, rgb(57 38 0) 0%, rgb(0 0 0) 100%);
             width: calc(100% - 10px);
             height: calc(100% - 10px);
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%,-50%);
             border-radius: 10px;
             overflow: hidden;
-            .modal-brick {
+            .modal-brick{
                 opacity: 0.5;
                 position: absolute;
                 left: 50%;
                 top: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%,-50%);
             }
-            .modal-contents {
+            .modal-contents{
                 display: flex;
                 gap: 20px;
                 width: 100%;
@@ -103,15 +85,11 @@
                 z-index: 100;
                 position: relative;
                 padding: 20px;
-                .side-menu {
+                .side-menu{
                     width: 300px;
                     height: 100%;
-                    .sidemenu-header {
-                        background: radial-gradient(
-                            circle,
-                            rgb(71, 48, 2) 0%,
-                            rgb(15, 10, 2) 100%
-                        );
+                    .sidemenu-header{
+                        background:radial-gradient(circle, rgb(71 48 2) 0%, rgb(15 10 2) 100%);
                         position: relative;
                         text-align: center;
                         padding: 11px;
@@ -128,10 +106,10 @@
                         line-height: 1.9;
                         margin-bottom: 30px;
                     }
-                    .menu {
+                    .menu{
                         height: 100%;
                         width: 100%;
-                        .menu-item {
+                        .menu-item{
                             width: 100%;
                             height: 53px;
                             display: flex;
@@ -142,12 +120,7 @@
                             backdrop-filter: blur(4px);
                             margin-bottom: 10px;
                             padding-left: 30px;
-                            background: linear-gradient(
-                                1deg,
-                                rgb(61, 44, 9) 0%,
-                                rgb(143, 111, 53) 48%,
-                                rgb(62, 45, 11) 100%
-                            );
+                            background: linear-gradient(1deg, rgb(61 44 9) 0%, rgb(143 111 53) 48%, rgb(62 45 11) 100%);
                             font-size: 18px;
                             color: #ffeec9 !important;
                             font-weight: 500;
@@ -155,15 +128,11 @@
                         }
                     }
                 }
-                .subpage-content {
+                .subpage-content{
                     width: 100%;
                     height: calc(100% - 98px);
-                    .subpagecontent-header {
-                        background: radial-gradient(
-                            circle,
-                            rgb(71, 48, 2) 0%,
-                            rgb(15, 10, 2) 100%
-                        );
+                    .subpagecontent-header{
+                        background: radial-gradient(circle, rgb(71 48 2) 0%, rgb(15 10 2) 100%);
                         position: relative;
                         text-align: center;
                         padding: 11px;
@@ -181,27 +150,23 @@
                         margin-bottom: 30px;
                         width: 100%;
                     }
-                    .content {
+                    .content{
                         width: 100%;
                         height: 100%;
-                        background: radial-gradient(
-                            circle,
-                            rgb(33, 22, 4) 0%,
-                            rgb(15, 10, 2) 100%
-                        );
+                        background: radial-gradient(circle, rgb(33 22 4) 0%, rgb(15 10 2) 100%);
                         border-radius: 5px;
                         // border: 3px solid #271d0d;
                         padding: 30px;
                         overflow: auto;
                         border: 1px solid #8e6e341f;
-                        .form-control {
+                        .form-control{
                             background-color: #2e1f08;
                             color: #fff;
                         }
-                        > {
-                            div {
+                        >{
+                            div{
                                 display: none;
-                                &.active {
+                                &.active{
                                     display: block !important;
                                 }
                             }
@@ -213,49 +178,47 @@
     }
 }
 
-.form-control {
-    border: 1px solid #9f742045 !important;
-    &:focus {
+.form-control{
+    border: 1px solid rgb(159 116 32 / 27%) !important;
+    &:focus{
         outline: unset !important;
-        border: 1px solid #9f742045 !important;
-        box-shadow: 0 0 10px #9f742045 !important;
+        border: 1px solid rgb(159 116 32 / 27%) !important;
+        box-shadow: 0 0 10px rgb(159 116 32 / 27%) !important;
     }
 }
 
-.table-bordered {
-    thead {
-        background: #8d6d342e;
+.table-bordered{
+    thead{
+        background: rgb(141 109 52 / 18%);
     }
-    th,
-    td,
-    tr {
-        border: 1px solid #7f622d54 !important;
+    th,td,tr{
+        border: 1px solid rgb(127 98 45 / 33%) !important;
         white-space: nowrap;
         background: unset !important;
         color: #fffaed;
     }
-    th {
+    th{
         color: #feedc8;
     }
 }
 
-.custom-pagination {
+.custom-pagination{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     width: fit-content;
-    &.not-center {
+    &.not-center{
         left: unset;
         transform: unset;
     }
-    .pagination {
+    .pagination{
         gap: 4px;
-        .page-item {
+        .page-item{
             min-width: 38px;
             min-height: 38px;
-            .page-link {
-                background: #150e04 !important;
-                border: 1px solid #8768304d;
+            .page-link{
+                background: rgb(21 14 4) !important;
+                border: 1px solid rgb(135 104 48 / 30%);
                 border-radius: 100px;
                 color: #f9b318 !important;
                 display: flex;
@@ -264,16 +227,12 @@
                 min-height: 100%;
                 min-width: 100%;
                 font-weight: 700;
+                
             }
-            &.active {
-                .page-link {
+            &.active{
+                .page-link{
                     border: unset !important;
-                    background: linear-gradient(
-                        180deg,
-                        rgb(130, 90, 3) 0%,
-                        rgb(203, 166, 98) 48%,
-                        rgb(100, 76, 30) 100%
-                    ) !important;
+                    background: linear-gradient(180deg, rgb(130 90 3) 0%, rgb(203 166 98) 48%, rgb(100 76 30) 100%) !important;
                     color: #000 !important;
                 }
             }
@@ -281,40 +240,30 @@
     }
 }
 
-.overlay {
+.overlay{
     position: fixed;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
-    background-color: #00000091;
+    background-color: rgb(0 0 0 / 57%);
     z-index: 100;
     display: none;
     cursor: pointer;
 }
 
-.btn {
+.btn{
     box-shadow: 0 0 10px #000;
-    &.btn-secondary {
-        background: linear-gradient(
-            1deg,
-            rgb(36, 36, 36) 0%,
-            rgb(60, 58, 53) 48%,
-            rgb(50, 50, 50) 100%
-        );
+    &.btn-secondary{
+        background:linear-gradient(1deg, rgb(36 36 36) 0%, rgb(60, 58, 53) 48%, rgb(50 50 50) 100%);
         border: unset;
     }
-    &.btn-danger {
-        background: linear-gradient(
-            180deg,
-            rgb(130, 4, 28) 0%,
-            rgb(145, 34, 34) 48%,
-            rgb(255, 76, 76) 100%
-        );
+    &.btn-danger{
+        background: linear-gradient(180deg, rgb(130, 4, 28) 0%, rgb(145, 34, 34) 48%, rgb(255, 76, 76) 100%);
     }
 }
 
-.game-card {
+.game-card{
     border: 3px solid #69501e;
     border-radius: 5px;
     position: relative;
@@ -327,30 +276,26 @@
     display: block;
     background-size: cover;
     background-position: center;
-    &.inactive {
+    &.inactive{
         filter: grayscale(1) !important;
         transform: scale(0.95);
     }
-    .game-card-body {
+    .game-card-body{
         width: 100%;
         height: 100%;
-        img {
+        img{
             height: 100%;
             object-fit: cover;
             animation: animate 9s ease-in-out infinite;
         }
     }
-    .game-card-overlay {
+    .game-card-overlay{
         position: absolute;
         bottom: 0;
         height: 100%;
         width: 100%;
-        background: linear-gradient(
-            0deg,
-            rgb(0, 0, 0) 0%,
-            rgba(0, 0, 0, 0) 100%
-        );
-        .game-title {
+        background: linear-gradient(0deg, rgb(0 0 0) 0%, rgba(0, 0, 0, 0) 100%);
+        .game-title{
             position: absolute;
             text-align: center;
             padding: 17px;
@@ -359,17 +304,14 @@
             transform: translateX(-50%);
             width: 100%;
             z-index: 5;
-            img {
+            img{
                 height: 35px;
                 object-fit: contain;
-                width: 100%;
+                width: 100%;            
             }
         }
-        button {
-            background: radial-gradient(
-                rgb(144, 109, 38) 0%,
-                rgb(0, 0, 0) 100%
-            );
+        button{
+            background: radial-gradient(rgb(144 109 38) 0%, rgb(0 0 0) 100%);
             border-radius: 5px;
             border: 2px solid #745b2e;
             position: absolute;
@@ -387,7 +329,7 @@
             align-items: center;
             justify-content: center;
             opacity: 0;
-            i {
+            i{
                 font-size: 2.3em;
                 background: -webkit-linear-gradient(#edc36b, #cf8d09);
                 -webkit-background-clip: text;
@@ -397,53 +339,54 @@
             }
         }
     }
-    &:hover {
+    &:hover{
         box-shadow: 0 0 16px rgb(26, 23, 3);
-        .game-card-overlay {
-            button {
+        .game-card-overlay{
+            button{
                 opacity: 1;
             }
-            .game-title {
-                img {
-                    animation: animate 2s ease-in-out infinite;
+            .game-title{
+                img{
+                    animation: animate 2s ease-in-out infinite;   
                 }
             }
         }
-        .game-card-body {
-            img {
+        .game-card-body{
+            img{
+                filter: drop-shadow(0 0 10px rgba(255, 209, 83, 0.726));
                 animation: animate 2s ease-in-out infinite;
             }
         }
     }
 }
 @keyframes animate {
-    0% {
+    0%{
         transform: scale(1);
     }
-    50% {
+    50%{
         transform: scale(1.1);
     }
-    100% {
+    100%{
         transform: scale(1);
     }
 }
-.game-card-parent {
+.game-card-parent{
     justify-content: center;
     flex-wrap: wrap;
     gap: 14px;
     display: none;
-    &.active {
+    &.active{
         display: flex;
     }
-    &.casino {
-        .game-card {
+    &.casino{
+        .game-card{
             background: url(../img/providers/casino/bg.jpg);
             width: calc(100% / 6 - 13px);
             height: 300px;
         }
     }
-    &.slot {
-        .game-card {
+    &.slot{
+        .game-card{
             width: calc(100% / 7 - 13px);
             background: url(../img/providers/slot/bg.jpg);
             height: 200px;
