@@ -2,7 +2,7 @@
     <section class="mid-sec" id="games-section">
         <div class="container">
             <div class="main-tab">
-                <a href="javascript:void(0)" data-val="casino">
+                <a href="javascript:void(0)" @click="isCasinoActive = true, isSlotActive = false">
                     <img src="src/assets/img/elements/casino-img.png" alt="">
                     <div class="box-bg">
                         <div class="box-text left">
@@ -12,7 +12,7 @@
                         <img src="src/assets/img/elements/casino-button-bg.png" alt="">
                     </div>
                 </a>
-                <a href="javascript:void(0)" data-val="slot">
+                <a href="javascript:void(0)" @click="isSlotActive = true, isCasinoActive = false">
                     <img src="src/assets/img/elements/slot-img.png" alt="">
                     <div class="box-bg">
                         <div class="box-text right">
@@ -23,7 +23,7 @@
                     </div>
                 </a>
             </div> 
-            <div class="game-card-parent mt-5 casino active">
+            <div class="game-card-parent mt-5 casino" :class="{active : isCasinoActive}">
                 <a href="javascript:void(0)" class="game-card animate__animated animate__fadeIn">
                     <div class="game-card-body">
                         <img src="src/assets/img/providers/casino/redgold.png" alt="">
@@ -109,7 +109,7 @@
                     </div>
                 </a>
             </div>
-            <div class="game-card-parent mt-5 slot">
+            <div class="game-card-parent mt-5 slot" :class="{active : isSlotActive}">
                 <a href="javascript:void(0)" class="game-card animate__animated animate__fadeIn">
                     <div class="game-card-body">
                         <img src="src/assets/img/providers/slot/provider-char/pragmatic.png" alt="">
@@ -369,7 +369,13 @@
 
 <script>
 export default {
-    name: "GameTab"
+    name: "GameTab",
+    data() {
+        return {
+            isCasinoActive: true,
+            isSlotActive: false
+        }
+    }
 }
 </script>
 

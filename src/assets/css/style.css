@@ -275,7 +275,7 @@ main section.mid-sec .main-tab a .box-bg .box-text span { font-size: 0.9em; }
 
 .board-wrapper .mid-board .header button.active { opacity: 1; color: #000; }
 
-.board-wrapper .mid-board .body { border: 1px solid #ff9309; background: radial-gradient(circle, #4b4031 0%, #101010 91%); height: calc(100% - 45px); width: 100%; border-radius: 5px; padding: 10px; display: none; }
+.board-wrapper .mid-board .body { border: 1px solid #ff9309; background: radial-gradient(circle, #4b4031 0%, #101010 91%); height: calc(100% - 45px); width: 100%; border-radius: 5px; padding: 10px; display: none; overflow: hidden; }
 
 .board-wrapper .mid-board .body.active { display: block; }
 
@@ -318,6 +318,8 @@ footer .container .logo-section { display: flex; flex-direction: column; align-i
 footer .container .logo-section .footer-logo { width: 150px; }
 
 footer .container .logo-section span { font-size: 0.8em; color: #9e8964; font-weight: 500; }
+
+.vue3-marquee.vertical { width: 100% !important; }
 
 @media (max-width: 1625px) { .subpage-wrapper .subpage-container .subpage-inner .modal-contents .side-menu .menu .menu-item { height: 53px; }
   .subpage-wrapper .subpage-container .subpage-inner .modal-contents .subpage-content .content { overflow: auto; } }

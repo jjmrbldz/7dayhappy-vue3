@@ -318,6 +318,7 @@ main {
             border-radius: 5px;
             padding: 10px;
             display: none;
+            overflow: hidden;
             &.active {
                 display: block;
             }
@@ -438,4 +439,8 @@ footer {
             }
         }
     }
+}
+
+.vue3-marquee.vertical {
+    width: 100% !important;
 }

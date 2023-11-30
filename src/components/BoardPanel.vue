@@ -21,111 +21,115 @@
                 </div>
                 <div class="mid-board">
                     <div class="header">
-                        <button class="btn btn-gold active" data-tab="withdraw">최근출금내역</button>
-                        <button class="btn btn-gold"  data-tab="deposit">최근입금내역</button>
+                        <button class="btn btn-gold" data-tab="withdraw" :class="{active : isWithdrawBoardActive}" @click="isWithdrawBoardActive = true, isDepositBoardActive = false">최근출금내역</button>
+                        <button class="btn btn-gold"  data-tab="deposit" :class="{active : isDepositBoardActive}" @click="isWithdrawBoardActive = false, isDepositBoardActive = true">최근입금내역</button>
                     </div>
-                    <div class="body active animate__animated animate__fadeIn" id="withdraw">
+                    <div class="body animate__animated animate__fadeIn" id="withdraw" :class="{active : isWithdrawBoardActive}">
                         <ul>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
+                            <Vue3Marquee :vertical=true :pauseOnHover=true>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                            </Vue3Marquee>
                         </ul>
                     </div>
-                    <div class="body animate__animated animate__fadeIn" id="deposit">
+                    <div class="body animate__animated animate__fadeIn" id="deposit" :class="{active : isDepositBoardActive}">
                         <ul>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
-                            <li>
-                                <span class="user">jjmr****</span>
-                                <span class="amount">1,000,000 won</span>
-                            </li>
+                            <Vue3Marquee :vertical=true :pauseOnHover=true>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                                <li>
+                                    <span class="user">jjmr****</span>
+                                    <span class="amount">1,000,000 won</span>
+                                </li>
+                            </Vue3Marquee>
                         </ul>
                     </div>
                 </div>
@@ -152,8 +156,19 @@
 </template>
 
 <script>
+import { Vue3Marquee } from 'vue3-marquee'
+
 export default {
-    name: "BoardPanel"
+    name: "BoardPanel",
+    data () {
+        return {
+            isWithdrawBoardActive: true,
+            isDepositBoardActive: false,
+        }
+    },
+    components: {
+        Vue3Marquee,
+    }
 }
 </script>
 
