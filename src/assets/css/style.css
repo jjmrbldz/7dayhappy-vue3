@@ -247,63 +247,63 @@ main section.mid-sec .main-tab a .box-bg .box-text div { font-size: 1.6em; font-
 
 main section.mid-sec .main-tab a .box-bg .box-text span { font-size: 0.9em; }
 
-main section.mid-sec .board-wrapper { display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%; margin-top: 60px; }
+.board-wrapper { display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%; margin-top: 60px; }
 
-main section.mid-sec .board-wrapper .left-board { background: radial-gradient(circle, #1b1b1b 0%, #000000 91%); width: calc(100% / 3); height: 300px; position: relative; padding-left: 16px; padding-right: 10px; border-radius: 5px; }
+.board-wrapper .left-board { background: radial-gradient(circle, #1b1b1b 0%, #000000 91%); width: calc(100% / 3); height: 300px; position: relative; padding-left: 16px; padding-right: 10px; border-radius: 5px; }
 
-main section.mid-sec .board-wrapper .left-board::before { content: ""; width: 5px; height: 100%; position: absolute; left: 0; background: radial-gradient(circle, #eebe65 0%, #805808 51%); }
+.board-wrapper .left-board::before { content: ""; width: 5px; height: 100%; position: absolute; left: 0; background: radial-gradient(circle, #eebe65 0%, #805808 51%); }
 
-main section.mid-sec .board-wrapper .left-board .header { display: flex; align-items: center; justify-content: space-between; height: 50px; position: relative; }
+.board-wrapper .left-board .header { display: flex; align-items: center; justify-content: space-between; height: 50px; position: relative; }
 
-main section.mid-sec .board-wrapper .left-board .header .icon { display: flex; align-items: center; gap: 5px; position: absolute; }
+.board-wrapper .left-board .header .icon { display: flex; align-items: center; gap: 5px; position: absolute; }
 
-main section.mid-sec .board-wrapper .left-board .header .icon span { color: #ffc053; font-weight: 700; }
+.board-wrapper .left-board .header .icon span { color: #ffc053; font-weight: 700; }
 
-main section.mid-sec .board-wrapper .left-board .header .btn { width: 100px; position: absolute; right: 0; }
+.board-wrapper .left-board .header .btn { width: 100px; position: absolute; right: 0; }
 
-main section.mid-sec .board-wrapper .left-board .body { border: 1px solid #ff9309; height: calc(100% - 60px); width: 100%; border-radius: 7px; padding: 10px; }
+.board-wrapper .left-board .body { border: 1px solid #ff9309; height: calc(100% - 60px); width: 100%; border-radius: 7px; padding: 10px; }
 
-main section.mid-sec .board-wrapper .left-board .body ul { width: 100%; height: 100%; }
+.board-wrapper .left-board .body ul { width: 100%; height: 100%; }
 
-main section.mid-sec .board-wrapper .left-board .body ul li { width: 100%; height: calc(100% / 4); display: flex; align-items: center; border-bottom: 1px solid #302b21; font-weight: 300; }
+.board-wrapper .left-board .body ul li { width: 100%; height: calc(100% / 4); display: flex; align-items: center; border-bottom: 1px solid #302b21; font-weight: 300; }
 
-main section.mid-sec .board-wrapper .mid-board { background: #000000; width: calc(100% / 3); height: 300px; padding: 10px; border-radius: 5px; padding-top: 5px; }
+.board-wrapper .mid-board { background: #000000; width: calc(100% / 3); height: 300px; padding: 10px; border-radius: 5px; padding-top: 5px; }
 
-main section.mid-sec .board-wrapper .mid-board .header { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 6px; }
+.board-wrapper .mid-board .header { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 6px; }
 
-main section.mid-sec .board-wrapper .mid-board .header button { width: calc(100% / 2); opacity: 0.7; border: unset; }
+.board-wrapper .mid-board .header button { width: calc(100% / 2); opacity: 0.7; border: unset; }
 
-main section.mid-sec .board-wrapper .mid-board .header button.active { opacity: 1; color: #000; }
+.board-wrapper .mid-board .header button.active { opacity: 1; color: #000; }
 
-main section.mid-sec .board-wrapper .mid-board .body { border: 1px solid #ff9309; background: radial-gradient(circle, #4b4031 0%, #101010 91%); height: calc(100% - 45px); width: 100%; border-radius: 5px; padding: 10px; display: none; }
+.board-wrapper .mid-board .body { border: 1px solid #ff9309; background: radial-gradient(circle, #4b4031 0%, #101010 91%); height: calc(100% - 45px); width: 100%; border-radius: 5px; padding: 10px; display: none; }
 
-main section.mid-sec .board-wrapper .mid-board .body.active { display: block; }
+.board-wrapper .mid-board .body.active { display: block; }
 
-main section.mid-sec .board-wrapper .mid-board .body ul { width: calc(100% - 10px); }
+.board-wrapper .mid-board .body ul { width: calc(100% - 10px); }
 
-main section.mid-sec .board-wrapper .mid-board .body ul li { width: calc(100% - 10px) !important; height: 50px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #302b21; font-weight: 300; padding-right: 10px !important; }
+.board-wrapper .mid-board .body ul li { width: calc(100% - 10px) !important; height: 50px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #302b21; font-weight: 300; padding-right: 10px !important; }
 
-main section.mid-sec .board-wrapper .mid-board .body ul li .amount { color: #ffc053; }
+.board-wrapper .mid-board .body ul li .amount { color: #ffc053; }
 
-main section.mid-sec .board-wrapper .right-board { background: radial-gradient(circle, #1b1b1b #000000 91%); width: calc(100% / 3); height: 300px; position: relative; padding-right: 16px; padding-left: 10px; border-radius: 5px; font-size: 0.9em; }
+.board-wrapper .right-board { background: radial-gradient(circle, #1b1b1b #000000 91%); width: calc(100% / 3); height: 300px; position: relative; padding-right: 16px; padding-left: 10px; border-radius: 5px; font-size: 0.9em; }
 
-main section.mid-sec .board-wrapper .right-board::before { content: ""; width: 5px; height: 100%; position: absolute; right: 0; background: radial-gradient(circle, #eebe65 0%, #805808 51%); }
+.board-wrapper .right-board::before { content: ""; width: 5px; height: 100%; position: absolute; right: 0; background: radial-gradient(circle, #eebe65 0%, #805808 51%); }
 
-main section.mid-sec .board-wrapper .right-board .header { display: flex; align-items: center; justify-content: space-between; height: 50px; position: relative; }
+.board-wrapper .right-board .header { display: flex; align-items: center; justify-content: space-between; height: 50px; position: relative; }
 
-main section.mid-sec .board-wrapper .right-board .header .icon { display: flex; align-items: center; gap: 5px; position: absolute; }
+.board-wrapper .right-board .header .icon { display: flex; align-items: center; gap: 5px; position: absolute; }
 
-main section.mid-sec .board-wrapper .right-board .header .icon span { color: #ffc053; font-weight: 700; white-space: nowrap; }
+.board-wrapper .right-board .header .icon span { color: #ffc053; font-weight: 700; white-space: nowrap; }
 
-main section.mid-sec .board-wrapper .right-board .header .btn { width: 100px; position: absolute; right: 0; }
+.board-wrapper .right-board .header .btn { width: 100px; position: absolute; right: 0; }
 
-main section.mid-sec .board-wrapper .right-board .body { border: 1px solid #ff9309; height: calc(100% - 60px); width: 100%; border-radius: 7px; padding: 10px; }
+.board-wrapper .right-board .body { border: 1px solid #ff9309; height: calc(100% - 60px); width: 100%; border-radius: 7px; padding: 10px; }
 
-main section.mid-sec .board-wrapper .right-board .body ul { width: 100%; height: 100%; }
+.board-wrapper .right-board .body ul { width: 100%; height: 100%; }
 
-main section.mid-sec .board-wrapper .right-board .body ul li { width: 100%; height: calc(100% / 4); display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #302b21; font-weight: 300; }
+.board-wrapper .right-board .body ul li { width: 100%; height: calc(100% / 4); display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #302b21; font-weight: 300; }
 
-main section.mid-sec .board-wrapper .right-board .body ul li .date { color: #949494; }
+.board-wrapper .right-board .body ul li .date { color: #949494; }
 
 footer { padding: 30px 0; padding-bottom: 0; }
 
